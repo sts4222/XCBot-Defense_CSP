@@ -12,9 +12,13 @@ example:
 <br />
 
 ---
+## Add this code to template file. 
+
+---
 ### Verify if CSP is enabled and if nonce is used.
 
-Open the iApp template with any editor and the following code at line: 2078
+* Open the iApp template with any editor 
+* add / change the following code at line: 2078
 
 <br />
 
@@ -29,10 +33,14 @@ Open the iApp template with any editor and the following code at line: 2078
 
 <br />
 
+![example](/images/image-02.png)
+
+<br />
+
 ---
 ### insert the nonce value (if present) into the existing JS_snippet
 
-add / change the code at line: 2235 (after adding the first code snippet above)
+* add / change the code at line: 2235 (after adding the first code snippet above)
 
 `if {$nonce != 1} {
         set map_find "<script"
@@ -42,8 +50,7 @@ add / change the code at line: 2235 (after adding the first code snippet above)
 	set js_snippet $I1_js_io_snippet
 }`
 
-
-add / change the code at line: 2246 (after adding the code snippet above)
+* add / change the code at line: 2246 (after adding the code snippet above)
 
 `if {$nonce != 1} {
         regsub -nocase -all $map_find "${I1_js_io_snippet}${I1_js_tel_snippet}" $map_replace js_snippet
@@ -51,9 +58,21 @@ add / change the code at line: 2246 (after adding the code snippet above)
         set js_snippet ${I1_js_io_snippet}${I1_js_tel_snippet}
 }`
 
-add / change the code at line: 2274 (after adding the code snippet above)
+<br />
+
+![example](/images/image-03.png)
+
+<br />
+
+* add / change the code at line: 2274 (after adding the code snippet above)
 
 `unset nonce`
+
+<br />
+
+![example](/images/image-04.png)
+
+<br />
 
 ---
 ### Save and import the template into your BIG-IP and use it / replace the old one.  
