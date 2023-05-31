@@ -42,21 +42,21 @@ example:
 
 * add / change the code at line: 2235 (after adding the first code snippet above)
 
-`if {$nonce != 1} {
-        set map_find "<script"
-        set map_replace "<script nonce=$nonce"
-        regsub -nocase -all $map_find "${I1_js_io_snippet}" $map_replace js_snippet
-} else {
-	set js_snippet $I1_js_io_snippet
-}`
+        if {$nonce != 1} {
+                set map_find "<script"
+                set map_replace "<script nonce=$nonce"
+                regsub -nocase -all $map_find "${I1_js_io_snippet}" $map_replace js_snippet
+        } else {
+        set js_snippet $I1_js_io_snippet
+        }
 
 * add / change the code at line: 2246 (after adding the code snippet above)
 
-`if {$nonce != 1} {
-        regsub -nocase -all $map_find "${I1_js_io_snippet}${I1_js_tel_snippet}" $map_replace js_snippet
-} else {
+        if {$nonce != 1} {
+                regsub -nocase -all $map_find "${I1_js_io_snippet}${I1_js_tel_snippet}" $map_replace js_snippet
+        } else {
         set js_snippet ${I1_js_io_snippet}${I1_js_tel_snippet}
-}`
+        }
 
 <br />
 
@@ -66,7 +66,7 @@ example:
 
 * add / change the code at line: 2274 (after adding the code snippet above)
 
-`unset nonce`
+        unset nonce
 
 <br />
 
