@@ -22,14 +22,14 @@ example:
 
 <br />
 
-`set nonce 1
-    if {[HTTP::header exists "Content-Security-Policy"]} {
-	    set nonce [findstr [HTTP::header Content-Security-Policy] \'nonce 7 \']
-    } elseif {[HTTP::header exists "Content-Security-Policy-Report-Only"]} {
-        set nonce [findstr [HTTP::header Content-Security-Policy-Report-Only] \'nonce 7 \']
-    } else {
-    return
-    }`
+        set nonce 1
+        if {[HTTP::header exists "Content-Security-Policy"]} {
+                set nonce [findstr [HTTP::header Content-Security-Policy] \'nonce 7 \']
+        } elseif {[HTTP::header exists "Content-Security-Policy-Report-Only"]} {
+                set nonce [findstr [HTTP::header Content-Security-Policy-Report-Only] \'nonce 7 \']
+        } else {
+        return
+        }
 
 <br />
 
