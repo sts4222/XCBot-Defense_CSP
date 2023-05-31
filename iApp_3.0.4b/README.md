@@ -7,7 +7,7 @@
 
 example:
 
-![](../images/image01.png)
+![example](../images/picture01.png)
 
 <br />
 
