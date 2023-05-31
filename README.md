@@ -34,3 +34,5 @@ example:
 <br />
 
 To enable F5XC Bot Defense Standard together with CSP nonce, the iApp needs to be adjusted with the following commands, based on the iApp version. 
+
+**_NOTE:_** Click on the folder for the iApp version you want to add the changes.
