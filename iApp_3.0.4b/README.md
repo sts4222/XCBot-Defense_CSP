@@ -1,4 +1,4 @@
-> **Disclaimer: The changes below will change the officially supported iApp version to provide the best user experience (integrated iRules). However, be aware that ALL changes are on your own risk.**
+> ## Disclaimer: The changes below will change the officially supported iApp version to provide the best user experience (integrated iRules). However, be aware that ALL changes are on your own risk.
 
 <br />
 
