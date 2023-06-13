@@ -1,3 +1,4 @@
+<mark>Disclaimer: The changes below will change the officially supported iApp version to provide the best user experience (integrated iRules). However, be aware that ALL changes are on your own risk. </mark>
 
 **_NOTE:_** This integration is for the iApp version 3.04b only.
 
